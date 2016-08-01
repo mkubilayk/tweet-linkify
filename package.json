@@ -1,0 +1,32 @@
+{
+  "name": "tweet-linkify",
+  "version": "0.1.0",
+  "description": "Link tweet entities.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mkubilayk/tweet-linkify.git"
+  },
+  "keywords": [
+    "twitter",
+    "linkify",
+    "html",
+    "entities",
+    "tweet"
+  ],
+  "author": "Kubilay Kahveci <mkubilayk@me.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mkubilayk/tweet-linkify/issues"
+  },
+  "homepage": "https://github.com/mkubilayk/tweet-linkify#readme",
+  "engines": {
+    "node": "^0.6.2"
+  },
+  "dependencies": {
+    "lodash": "^4.14.1"
+  }
+}
