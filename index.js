@@ -43,6 +43,8 @@ function linkify(tweet) {
         })
         .commit();
 
+    parts.push(chars.slice(idx));
+
     return punycode.ucs2.encode(_.flattenDeep(parts));
 }
 
