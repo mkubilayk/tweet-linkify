@@ -20,7 +20,7 @@ function linkify(tweet) {
     var parts = [];
     var idx = 0;
 
-    var links = _(tweet.entities)
+    _(tweet.entities)
         .map(function (section, type) {
             if (!enabled[type])
                 return [];
@@ -40,7 +40,8 @@ function linkify(tweet) {
             parts.push(chars.slice(idx, link.start));
             parts.push(wrap(chars, link));
             idx = link.end;
-        });
+        })
+        .commit();
 
     return punycode.ucs2.encode(_.flattenDeep(parts));
 }
