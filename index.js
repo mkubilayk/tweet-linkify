@@ -57,7 +57,7 @@ function buildUrl(type, entity) {
 }
 
 function wrap(chars, link) {
-    var pre = punycode.ucs2.decode('<a href="' + link.href + '">');
+    var pre = punycode.ucs2.decode('<a href="' + link.href + '" target="_blank">');
     var post = punycode.ucs2.decode('</a>');
 
     var mid = link.display
